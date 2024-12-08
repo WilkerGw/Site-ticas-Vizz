@@ -1,0 +1,57 @@
+:root {
+    --cinza-principal: #2e2e2e;
+    --amarelo-principal: #ffdd56;
+    --amarelo-submenu: #f4e6af;
+    --cor-fundo: #eeeeee;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+main {
+    margin-top: 69.75px;
+    width: 100%;
+    font-family: 'Poiret One', sans-serif;
+}
+
+h1 {
+    opacity: 80%;
+    font-size: 1.8rem;
+}
+
+h2 {
+    opacity: 80%;
+    font-size: 1.3rem;
+}
+
+section {
+    background-color: var(--cor-fundo);
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+section {
+}
+
+.banner__principal__container {
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    section {
+        height: auto;
+    }
+}
