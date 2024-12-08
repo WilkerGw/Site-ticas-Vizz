@@ -5,29 +5,37 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: var(--cor-fundo);
 }
 
 .icone__mapa {
-    width: 2rem;
+    width: 3rem;
     align-self: center;
+    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    padding: .3rem;
+    background-color: var(--cor-fundo);
 }
 
 #endereco__container iframe {
-    border-radius: .3rem;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    width: 80%;
+    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    width: 45rem;
+    height: 15rem;
 }
 
 .endereco {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 1rem;
     margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 .endereco p {
     font-size: 1.4rem;
+}
+
+.endereco :nth-child(3) {
+    font-size: 1rem;
 }
 
 @media (max-width: 600px) {

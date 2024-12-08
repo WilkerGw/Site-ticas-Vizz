@@ -4,10 +4,9 @@ header {
     justify-content: space-evenly;
     font-family: 'Poiret One', sans-serif;
     text-transform: lowercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: .5rem 5rem;
-    background-color: red;
-    color: var(--amarelo-principal);
+    background-color: var(--cinza-principal);
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -15,8 +14,8 @@ header {
 
 header ul li {
     cursor: pointer;
-    opacity: 80%;
     margin-left: 1rem;
+    color: var(--amarelo-submenu);
 }
 
 header ul li:hover {
@@ -25,7 +24,7 @@ header ul li:hover {
 }
 
 .header__logo {
-    width: 4rem;  
+    width: 3rem;  
     object-fit: contain;
     opacity: 80%;
 }

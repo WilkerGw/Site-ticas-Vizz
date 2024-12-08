@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="styles/endereco.css">
     <link rel="stylesheet" href="styles/contato.css">
     <link rel="stylesheet" href="styles/destaque.css">
+    <link rel="stylesheet" href="styles/end-banner.css">
     <script src="scripts/anima-scroll.js" defer></script>
     <script src="script.js" defer ></script>
     <script src="scripts/menu.js" defer ></script>
     <script src="scripts/sub-menu.js" defer ></script>
     <script src="scripts/carousel.js" defer ></script>
     <script src="scripts/destaque.js" defer ></script>
+    <script src="scripts/end-banner.js" defer></script>
 </head>
 <body>
     <header>
@@ -74,7 +76,6 @@
                     <li>Termos de Uso</li>
                 </ul>
         </ul>
-        <a href="https://wa.me/551123628799"><img src="img/header/header-img-whats.png" alt="icone whatsapp" class="header__icone__whats"></a>
         <img src="img/icones/cardapio.png" alt="icone de menu" class="header__icone__menu">
         <img src="img/icones/fechar.png" alt="icone de fechar" class="header__icone__fechar">
     </header>
@@ -86,12 +87,11 @@
                 <a href="https://wa.me/551123628799" target="_blank" class="redes__link__w hidden"><img src="img/icones/whatsapp.png" alt="Whatsapp" class="redes__icone"></a>
                 <a href="https://www.facebook.com/profile.php?id=61565492837095" target="_blank" class="redes__link__f hidden"><img src="img/icones/facebook.png" alt="Facebook" class="redes__icone"></a>
             </article>
-            <a href="https://maps.app.goo.gl/LoTWbhhPNdmYvSDn8" target="_blank">
-                <p>Avenida do Oratório, 4869, Vila Industrial <br> São Paulo - Sp</p>
-            </a>
+            <section class="endereco__container"> <!--address-section-->
+                <p class="address" id="address">Av do Oratório, 4869, Vila Industrial, São Paulo - SP</p>
+              </section>
         </section>
         <section class="carousel__promocional__container hidden">
-            <p>Traga sua receita, faça seu orçamento e surpreenda-se com o melhor preço e qualidade da região!</p>
             <div class="carousel">
                 <div class="carousel-track">
                     <img src="img/banners/1.png" alt="Imagem 1 desk" class="desk">
@@ -108,7 +108,6 @@
                     <img src="img/banners/6.png" alt="Imagem 6 Cçone mobi" class="mobi">
                 </div>
               </div>
-              <p>Qualidade e acessibilidade são alguns de nossos valores! Para que todos possam usufruir do conforto e manter a saúde ocular em dia!</p>
         </section>
         <section class="designe__container hidden">
             <h1>Designe</h1>
@@ -131,7 +130,6 @@
         <section class="destaque__oculos__container hidden">
             <div class="linha"></div>
                     <div class="destaque__titulo">
-                        <h1 class="hidden">Óculos de Sol com proteção UV400 Vizz Holanda</h1>
                         <img class="dest__img__titulo hidden" src="img/destaque/p2.png" alt="imagem modelo oculos de sol Holanda">
                     </div>
                     <div class="destaque__img__container">
@@ -145,7 +143,6 @@
                         </div>
                         <img src="img/destaque/p4.png" alt="" class="img__destaque">
                         <div class="destaque__descricao">
-                            <h3>Óculos de Sol Vizz Holanda - Estilo e Personalidade</h3> <br>
                             <p>Destaque-se com os óculos de sol VizzHolanda! Disponível em armações modernas e ousadas, incluindo tons vibrantes como verde translúcido, rosa pastel e o clássico tartaruga. Esses óculos são perfeitos para quem busca unir estilo único e conforto no dia a dia. Com lentes de alta qualidade, oferecem proteção UV e clareza visual. Ideais para qualquer ocasião, seja para complementar um look casual ou sofisticado.</p>
                             <h3>Características:</h3>
                             <ul>
@@ -157,12 +154,11 @@
                         </div>
                     </div>
                     <img src="img/destaque/p1.png" alt="" class="destaque__img_final hidden">
-                    <p>Holanda é o modelo perfeito para quem sabe que óculos de Sol é pra qualquer momento! <br>O queridinho da balada com o melhor preço da região.</p>
         </section>
         <scetion class="horario__container hidden">
+            <div class="linha2"></div>
             <article class="horario">
                 <img src="img/icones/relogio.png" alt="icone relogio" class="icone__relogio">
-                <h1>Horario de funcionamento</h1>
                 <p>
                     Segunda à Sexta das <span>10:00</span> às <span>19:00</span><br>
                     Sábados das <span>10:00</span> às <span>17:00</span><br>
@@ -181,17 +177,18 @@
             </article>
         </scetion>
         <section id="endereco__container" class="hidden">
+            <div class="linha3"></div>
             <article class="endereco">
                 <img src="img/icones/mapa.png" alt="" class="icone__mapa">
-                <h1>Endereço</h1>
-                <h2>Nos faça uma visita!</h2>
                 <p>Avenida do Oratório, 4869, Vila Industrial, São Paulo - SP</p>
                 <p>Estamos à <span>200 metros</span> da estação <span><a href="https://maps.app.goo.gl/RDHVWyMvsrASqB5U8" target="_blank">Vila Tolstói</a>.</span> <br> São apenas <span>4 minutos</span> de caminhada.</p>
             </article>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d116993.37814058634!2d-46.6101910862598!3d-23.6027883597688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x94ce5d0dedc7ec5d%3A0xb59f5577f9728b75!2sAv.%20do%20Orat%C3%B3rio%2C%204869%20-%20Jardim%20Guairaca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003221-200!3m2!1d-23.6028101!2d-46.5277895!5e0!3m2!1spt-BR!2sbr!4v1733151926301!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d116993.37814058634!2d-46.6101910862598!3d-23.6027883597688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x94ce5d0dedc7ec5d%3A0xb59f5577f9728b75!2sAv.%20do%20Orat%C3%B3rio%2C%204869%20-%20Jardim%20Guairaca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003221-200!3m2!1d-23.6028101!2d-46.5277895!5e0!3m2!1spt-BR!2sbr!4v1733151926301!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hidden"></iframe>
         </section>
-        <section id="contato__container">
+        <section id="contato__container" class="hidden">
+            <div class="linha4"></div>
             <h1>Fale Conosco</h1>
+            <img src="img/logos/logo-cinza2.png" alt="logo na cor cinza" class="logo__cinza hidden">
             <article class="contato">
                 <a href="https://wa.me/551123628799" target="_blank" class="fale-whats hidden">
                     <div class="contato__whats">
@@ -212,7 +209,6 @@
                     </div>
                 </a>
             </article>
-            <p>Tire sua dúvidas ou nos dê seu feedback! <br>Sua opinião é muito valiosa para nós.</p>
         </section>
     </main>
     <footer>

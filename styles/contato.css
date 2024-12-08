@@ -4,12 +4,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 30vh;
-    gap: 2rem;
-    padding-block: 10rem;
+    height: 100vh;
+    background-color: var(--cor-fundo);
+    position: relative;
 }
 
-#contato__container img {
+.contato img {
     width: 2.5rem;
 }
 
@@ -19,9 +19,21 @@
 
 .contato {
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    background-color: var(--cor-fundo);
+    z-index: 100;
+    padding: 0.5rem;
+}
+
+#contato__container h1 {
+    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    background-color: var(--cor-fundo);
+    padding-inline: 0.5rem;
+    z-index: 100;
+    text-transform: lowercase;
+    font-size: 1.5rem;
 }
 
 .contato__whats p, 
@@ -43,4 +55,9 @@
 .fale-face {transition-delay: 400ms;}
 .fale-insta {transition-delay: 700ms;}
 .fale-whats {transition-delay: 1000ms;}
+
+
+.logo__cinza {
+    width: 8rem;
+}
 

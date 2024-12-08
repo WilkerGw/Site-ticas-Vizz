@@ -11,9 +11,8 @@
 }
 
 .designe__container > h1 {
-    color: var(--amarelo-principal);
+    color: var(--amarelo-submenu);
     font-weight: 100;
-    opacity: 70%;
 }
 
 .designe__container > p {

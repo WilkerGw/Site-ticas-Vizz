@@ -3,29 +3,34 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     background-color: var(--cor-fundo);
     font-family: 'Poiret One', sans-serif;
     padding-block: 2rem;
+    height: 100vh;
 }
 
 .icone__relogio {
-    width: 2rem;
-    margin-block: 1rem;
+    width: 3rem;
+    align-self: center;
+    padding: .3rem;
+    background-color: var(--cor-fundo);
 }
 
 .horario {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 30rem;
     align-items: center;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    background-color: var(--cor-fundo);
 }
 
 .horario p {
     /*background-color: var(--cinza-principal);*/
-    width: 60%;
     padding: 1rem;
     color: var(--cinza-principal);
-    border-radius: .3rem;
     font-size: 1.4rem;
     text-align: center;
 }
@@ -36,12 +41,15 @@ span {
 }
 
 .video {
+    display: flex;
+    justify-content: center;
     width: 50%;
 }
 
 .video iframe {
-    border-radius: .3rem;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    background-color: var(--cor-fundo);
 
 }
 
@@ -53,7 +61,6 @@ span {
 
     .horario,.horario p, .video, .video iframe {
         width: 100%;
-        border-radius: 0%;
     }
 
     .horario p {

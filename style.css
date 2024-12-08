@@ -10,7 +10,6 @@ body {
 }
 
 main {
-    margin-top: 69.75px;
     width: 100%;
     font-family: 'Poiret One', sans-serif;
 }
@@ -49,6 +48,50 @@ section {
 .banner__principal__container {
     height: auto;
 }
+
+.linha {
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    width: 60rem;
+    height: 30rem;
+    position: absolute;
+}
+
+.linha2 {
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    width: 60rem;
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.linha3 {
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    width: 60rem;
+    height: 21rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.linha4 {
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    width: 25rem;
+    height: 12rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 @media (max-width: 600px) {
     section {
