@@ -50,7 +50,9 @@
 @media (max-width: 600px) {
 
   .carousel__promocional__container{
-    margin-top: 2rem;
+    padding: 0;
+    margin-top: .5rem;
+    height: 40vh;
   }
 
   .desk{

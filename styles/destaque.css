@@ -21,7 +21,8 @@
 .dest__img__titulo{
     width: 20rem;
     border: 1px solid transparent;
-    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;
     background-color: var(--cor-fundo);
     margin-top: 2rem;
     padding: 1rem;
@@ -37,7 +38,8 @@
 .img__destaque {
     width: 15rem;
     border: 1px solid transparent;
-    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;
     background-color: var(--cor-fundo);
 }
 
@@ -48,7 +50,8 @@
     justify-content: center;
     margin-left: 3rem;
     border: 1px solid transparent;
-    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;
     background-color: var(--cor-fundo);
     z-index: 100;
 }
@@ -67,7 +70,8 @@
     padding: 1rem;
     margin-right: 3rem;
     border: 1px solid transparent;
-    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;
     background-color: var(--cor-fundo);
     z-index: 100;
     margin-top: 1rem;
@@ -77,7 +81,8 @@
     width: 15rem;
     margin-top: 1rem;
     border: 1px solid transparent;
-    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;
     background-color: var(--cor-fundo);
     margin-bottom: 2rem;
 }
@@ -93,9 +98,20 @@
 
 @media (max-width: 600px) {
     .destaque__oculos__container{
+        justify-content: center;
         margin: 0;
         padding: 0;
         padding-inline: 1rem;
+        position: relative;
+        height: 100vh;
+    }
+
+    .destaque__titulo {
+        position: absolute;
+        top: 10px;
+    }
+
+    .destaque__titulo p {
     }
 
     .destaque__titulo h1 {
@@ -107,21 +123,23 @@
     }
 
     .destaque__img__extra {
-        width: 100%;
-        flex-direction: row;
-        box-shadow: none;
+        flex-direction: column;
         flex-wrap: wrap;
         padding: 0;
         margin: 0;
-
+        position: absolute;
+        left: 0;
+        margin-left: 1rem;
+        z-index: 1000;
     }
 
     .img__destaque{
-        width: 100%;
+        box-shadow: none;
+        position: absolute;
+        right: 0;
     }
 
     .img__extra {
-        margin-inline: 1rem;
     }
 
     .destaque__descricao{
@@ -129,11 +147,18 @@
         margin: 0;
         padding: 0;
         box-shadow: none;
+        position: absolute;
+        transform: translate(0%,600%); /* Posição inicial no eixo X e Y */
+    }
+
+    .desc__extra {
+        display: none;
     }
 
     .destaque__img_final {
         width: 100%;
         margin-top: 1rem;
+        display: none;
     }
 }
 

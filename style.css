@@ -1,5 +1,6 @@
 :root {
     --cinza-principal: #2e2e2e;
+    --cor-sombra: #2e2e2e39;
     --amarelo-principal: #ffdd56;
     --amarelo-submenu: #f4e6af;
     --cor-fundo: #eeeeee;
@@ -51,7 +52,8 @@ section {
 
 .linha {
     border: 1px solid transparent;
-    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;
     width: 60rem;
     height: 30rem;
     position: absolute;
@@ -59,8 +61,8 @@ section {
 
 .linha2 {
     border: 1px solid transparent;
-    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
-    width: 60rem;
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;    width: 60rem;
     height: 30rem;
     position: absolute;
     top: 50%;
@@ -71,8 +73,8 @@ section {
 
 .linha3 {
     border: 1px solid transparent;
-    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
-    width: 60rem;
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;    width: 60rem;
     height: 21rem;
     position: absolute;
     top: 50%;
@@ -83,8 +85,8 @@ section {
 
 .linha4 {
     border: 1px solid transparent;
-    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
-    width: 25rem;
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;    width: 25rem;
     height: 12rem;
     position: absolute;
     top: 50%;
@@ -94,7 +96,8 @@ section {
 
 
 @media (max-width: 600px) {
-    section {
-        height: auto;
-    }
+ .linha, .linha2, .linha3, .linha4 {
+    width: 100%;
+    display: none;
+ }
 }

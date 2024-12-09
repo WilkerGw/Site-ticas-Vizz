@@ -21,14 +21,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;    
     background-color: var(--cor-fundo);
     z-index: 100;
     padding: 0.5rem;
 }
 
 #contato__container h1 {
-    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;    
     background-color: var(--cor-fundo);
     padding-inline: 0.5rem;
     z-index: 100;
@@ -59,5 +61,17 @@
 
 .logo__cinza {
     width: 8rem;
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+@media (max-width: 600px) {
+
+    #contato__container {
+        height: 60vh;
+        gap: 1rem;
+    }
+
 }
 
