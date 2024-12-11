@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/contato.css">
     <link rel="stylesheet" href="styles/destaque.css">
     <link rel="stylesheet" href="styles/end-banner.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <script src="scripts/anima-scroll.js" defer></script>
     <script src="script.js" defer ></script>
     <script src="scripts/menu.js" defer ></script>
@@ -25,9 +26,7 @@
 </head>
 <body>
     <header>
-        <a href="#main">
-            <img src="img/header/header-logo.png" alt="Logotipo da ótica" class="header__logo">
-        </a>
+        <img src="img/header/header-logo.png" alt="Logotipo da ótica" class="header__logo">
         <ul class="header__menu__principal">
             <a href="#main">
                 <li>Inicio</li>
@@ -70,10 +69,15 @@
             </a>
             <li class="li__legais">Informações Legais</li>
                 <ul class="header__info__legais">
-                    <li>Política de Privacidade</li>
-                    <li>Política de Reembolso</li>
-                    <li>Trocas e Devoluções</li>
-                    <li>Termos de Uso</li>
+                    <a href="infos.html#privacidade" target="_blank">
+                        <li>Política de Privacidade</li>
+                    </a>
+                    <a href="infos.html#reembolso" target="_blank">
+                        <li>Política de Reembolso</li>
+                    </a>
+                    <a href="infos.html#troca" target="_blank">
+                        <li>Trocas e Devoluções</li>
+                    </a>
                 </ul>
         </ul>
         <img src="img/icones/cardapio.png" alt="icone de menu" class="header__icone__menu">
@@ -217,7 +221,55 @@
         </section>
     </main>
     <footer>
-
-    </footer>
+        <div class="footer-container">
+            <!-- Informações da empresa -->
+            <div class="footer-section company-info">
+                <h4>Sobre as Óticas Vizz</h4>
+                <p>As Óticas Vizz oferecem óculos de sol e de grau com estilo e qualidade. Nossa missão é garantir a melhor experiência para sua visão e estilo.</p>
+                <p><strong>Endereço:</strong> Avenida do Oratório, 4869, Vila Industrial, São Paulo - SP</p>
+                <p><strong>CNPJ:</strong> 56.160.043/0001-99</p>
+            </div>
+    
+            <!-- Navegação rápida -->
+            <div class="footer-section quick-links">
+                <h4>Navegação Rápida</h4>
+                <ul>
+                    <li><a href="#main" target="_blank">Home</a></li>
+                    <li><a href="https://oticasvizz.lojavirtualnuvem.com.br/produtos/" target="_blank">Produtos</a></li>
+                    <li><a href="#contato__container" target="_blank">Contato</a></li>
+                    <li><a href="infos.html#privacidade" target="_blank">Política de Privacidade</a></li>
+                    <li><a href="infos.html#troca" target="_blank">Trocas e Devoluções</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contato -->
+            <div class="footer-section contact">
+                <h4>Entre em Contato</h4>
+                <ul>
+                    <li><a href="https://wa.me/551123628799" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://www.instagram.com/oticasvizz/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61565492837095" target="_blank">Facebook</a></li>
+                    <li><a href="mailto:oticasvizz@gmail.com">E-mail: oticasvizz@gmail.com</a></li>
+                    <li><strong>Telefone:</strong> (11) 2362-8799</li>
+                </ul>
+            </div>
+    
+            <!-- Pagamentos e segurança -->
+            <div class="footer-section payments">
+                <h4>Pagamentos e Segurança</h4>
+                <p>Aceitamos diversos métodos de pagamento para sua conveniência:</p>
+                <ul class="payment-methods">
+                    <li>Cartões de Crédito (Visa, MasterCard, Elo)</li>
+                    <li>Pix</li>
+                </ul>
+                <p>Compre com segurança: site protegido com tecnologia HTTPS e certificação SSL.</p>
+            </div>
+        </div>
+    
+        <!-- Direitos autorais -->
+        <div class="footer-copyright">
+            <p>&copy; 2024 Óticas Vizz. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
 </body>
 </html>
