@@ -1,7 +1,6 @@
 .endereco__container {
     background-color: var(--cinza-principal);
     text-align: center;
-
 }
 
 .address-section {
@@ -24,4 +23,18 @@
 
   @keyframes blink {
     50% { border-color: transparent; }
+  }
+
+  @media (max-width: 600px) {
+    .endereco__container{
+      width: 100%;
+      padding-inline: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #address {
+      width: 100%;
+      font-size: 0.8rem;
+    }
   }
