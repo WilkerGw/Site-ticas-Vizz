@@ -111,13 +111,6 @@
         top: 10px;
     }
 
-    .destaque__titulo p {
-    }
-
-    .destaque__titulo h1 {
-        font-size: 1.3rem;
-    }
-
    .destaque__img__container {
         flex-direction: column;
     }

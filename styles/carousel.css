@@ -39,12 +39,6 @@
     display: none;
   }
 
-  .carousel__promocional__container > p {
-    font-size: 1.3rem;
-    text-align: center;
-    margin-top: 1rem;
-  }
-
   /*RESPONSIVO PARA MOBILE*/
 
 @media (max-width: 600px) {

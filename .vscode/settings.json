@@ -1,4 +1,4 @@
 {
-    "editor.defaultColorDecorators": true,
+    "editor.defaultColorDecorators": "auto",
     "window.autoDetectColorScheme": false
 }

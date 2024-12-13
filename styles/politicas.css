@@ -21,3 +21,15 @@
     width: 5rem;
     margin-block: 2rem;
 }
+
+@media (max-width: 600px) {
+
+    .politicas__container {
+        padding-inline: 1rem;
+    }
+
+    .privacidade__container, .reembolso__container, .troca__container {
+        width: 100%;
+    }
+
+}

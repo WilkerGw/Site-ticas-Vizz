@@ -12,17 +12,27 @@ body {
 
 main {
     width: 100%;
-    font-family: 'Poiret One', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 h1 {
     opacity: 80%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 200;
 }
 
 h2 {
     opacity: 80%;
     font-size: 1.3rem;
+}
+
+p {
+    opacity: 70%;
+    font-weight: 200;
+}
+
+ul li {
+    opacity: 70%;
 }
 
 section {

@@ -17,7 +17,6 @@
     width: 100%;
     gap: 5rem;
     margin-top: 1rem;
-    padding-bottom: 1rem;
 }
 
 .redes__link__i {transition-delay: 400ms;}
@@ -35,25 +34,11 @@
     transition: 1s;
 }
 
-.banner__principal__container p {
-    text-align: center;
-    color: var(--amarelo-submenu);
-    font-family: 'Poiret One', sans-serif;
-    margin-bottom: 1rem;
-    cursor: pointer;
-    font-size: 1.1rem;
-    padding: .5rem;
-
-}
-
 @media (max-width: 600px) {
 
     .banner__principal__logo {
         width: 8rem;
     }
-    
-    .banner__principal__container p {
-        font-size: 1rem;
-    }
+
     
 }

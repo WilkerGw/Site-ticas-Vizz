@@ -13,10 +13,6 @@
     width: 2.5rem;
 }
 
-#contato__container > p {
-    font-size: 1.5rem;
-}
-
 .contato {
     display: flex;
     align-items: center;
@@ -28,21 +24,8 @@
     padding: 0.5rem;
 }
 
-#contato__container h1 {
-    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
-    border-radius: .5rem;    
-    background-color: var(--cor-fundo);
-    padding-inline: 0.5rem;
-    z-index: 100;
-    text-transform: lowercase;
-    font-size: 1.5rem;
-}
-
-.contato__whats p, 
-.contato__insta p, 
-.contato__face p {
-    font-size: 1rem;
-    text-transform: lowercase;
+.contato__insta p, .contato__face p, .contato__whats p {
+    font-weight: 1rem;
     margin-inline: 1rem;
 }
 
